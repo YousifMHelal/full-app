@@ -1,0 +1,39 @@
+.dropdown {
+  padding: 10px 0;
+}
+
+.dropdownHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.dropdownHeader p {
+  cursor: default;
+  font-weight: 600;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.open {
+  max-height: 200px; /* Adjust height as needed */
+}
+
+.option {
+  padding: 3px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

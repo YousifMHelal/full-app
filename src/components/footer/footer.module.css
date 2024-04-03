@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.title span {
+  color: var(--primary);
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.social .link {
+  transition: all 0.5s ease-in;
+}
+
+.social :hover {
+  color: var(--secondary);
+}
+
+.link {
+  cursor: pointer;
+  color: var(--text);
+}
+
+.text {
+  width: 350px;
+  color: var(--text);
+}
+
+.footer {
+  color: var(--text);
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .text {
+    display: none;
+  }
+}

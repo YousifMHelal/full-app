@@ -1,0 +1,100 @@
+.cartPage {
+  position: fixed;
+  top: 5px;
+  right: 0;
+  overflow: hidden;
+  height: calc(100vh - 10px);
+  width: 400px;
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 0;
+  cursor: default;
+  transform: translateX(100%);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  padding: 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cartPage .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cartProducts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.cartProduct {
+  display: flex;
+  gap: 20px;
+  border: 2px solid var(--primary);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.productInfo {
+  width: 100%;
+}
+
+.productDesc {
+  font-size: 12px;
+}
+
+.cartPage .productCheck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.qty {
+  width: 50px;
+  outline: none;
+  border: 2px solid var(--text);
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.checkBtn {
+  width: max-content;
+  padding: 15px 40px;
+  font-size: 18px;
+  color: var(--background);
+  background: var(--secondary);
+  border: 2px solid var(--background);
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+  text-transform: capitalize;
+  margin: auto;
+}
+
+.checkBtn:hover {
+  color: var(--secondary);
+  background: var(--background);
+  border-color: var(--secondary);
+}
+
+@media screen and (max-width: 640px) {
+  .cartPage {
+    width: 100%;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  background: #54534fd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.title {
+  text-transform: capitalize;
+  color: var(--background);
+}

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 20px 0;
+}
+
+.brand {
+  font-size: 60px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.brand:hover {
+  color: var(--primary);
+  transform: scale(1.2);
+}
